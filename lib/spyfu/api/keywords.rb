@@ -18,7 +18,7 @@ module SpyFu
       
       # Get list of transactional keywords related to keyword
       def transactional_related_keywords(params)
-        send_get "related/getTransactionKeywords"
+        send_get "related/getTransactionKeywords", params
       end
 
     end
