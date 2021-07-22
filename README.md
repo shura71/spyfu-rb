@@ -35,13 +35,13 @@ spyfu.core_api.get_domain_competitors_us(...).request
 spyfu.core_api.get_domain_competitors_uk(...).request
 ```
 
-## KSS API
+## Keyword API
 
-You can access the [Keyword SmartSearch API](https://www.spyfu.com/api/docs/related-keywords).
+You can access the [Keyword API](https://www.spyfu.com/api/docs/keywords#tag/Related-Keywords).
 
 ```ruby
-spyfu.kss_api.related_keywords(:q => 'spyfu api', :r => 100).request
-spyfu.kss_api.domain_related_keywords(:q => 'spyfu api', :r => 100).request
+spyfu.keywords_api.related_keywords(:query => 'spyfu api', :countryCode => 'US', :api_key => '....').request
+spyfu.keywords_api.question_related_keywords(:query => 'spyfu api', :countryCode => 'US', :api_key => '....').request
 ```
 
 ## Leads API

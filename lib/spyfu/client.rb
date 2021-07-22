@@ -14,9 +14,9 @@ module SpyFu
     def core_api
       SpyFu::Api::Core.new(self)
     end
-
-    def kss_api
-      SpyFu::Api::Kss.new(self)
+    
+    def keywords_api
+      SpyFu::Api::Keywords.new(self)
     end
 
     def leads_api
